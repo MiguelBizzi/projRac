@@ -1,0 +1,411 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    min-width: 500px;
+}
+
+body a {
+    text-decoration: none;
+}
+
+/* NAVEGACAO  */
+
+header {
+    width: 100%;
+}
+
+nav {
+    border-bottom: 1px solid #666;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+}
+
+.nav-item{
+    padding: 30px;
+    padding-right: 30px;
+}
+
+.navbar-brand {
+    margin-left: 10%;
+
+}
+
+li.nav-item a{
+    color: #666;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+li.nav-item a:hover{
+    color: #666;
+    font-weight: bold;
+    font-size: 22px;
+    transition: .5s;
+}
+
+@media screen and (max-width: 1083px) {
+
+    .nav-item{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 885px) {
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .navbar-brand {
+        position: relative;
+        left: 21%;
+    }
+
+    .navbar-brand img{
+        padding: 0;
+    }
+
+    nav ul {
+        margin: 0 auto;
+    }
+    nav ul li{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*  MAIN  *********************************************/
+
+main {
+    width: 100%;
+}
+
+/* BANNER */
+
+#banner-home{
+    background: url(imagens/banner-home.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+#container-card {
+    position: relative;
+    top: 100px;
+    width: 50%;
+    margin-left: 5%;
+    padding: 20px;
+    text-align: center;
+}
+
+#card{
+    padding: 20px;
+}
+
+#card h1{
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+}
+
+#card h2{
+    color: white;
+    font-weight: 600;
+    font-size: 3.3rem;
+    margin-top: 10px;
+}
+
+#card p{
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+#card button{
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+#card button:hover{
+    background-color: #f3f3f37c;
+    transition: .4s;
+}
+
+@media screen and (max-width:1449px){
+    #container-card {
+        position: relative;
+        top: 40px;
+    }
+
+}
+
+@media screen and (max-width:1271px){
+    #container-card {
+        position: relative;
+        top: 0;
+        margin: 0 auto;
+        width: 80%;
+        
+    }
+
+    #container-card h1{
+        position: relative;
+        top: 0;
+        margin: 0 auto;
+        
+    }
+
+    #container-card h2{
+        text-align: center;
+        font-size: 40px;
+        
+    }
+
+    #banner-home{
+        height: 550px;
+    }
+
+}
+
+/* SERVICOS */
+
+section#servicos{
+    margin-top: 60px;
+}
+
+section#servicos .texto {
+    margin: 0 auto;
+    width: 45%;
+}
+
+section#servicos .texto hr{
+    margin-top: 50px;
+}
+
+section#servicos .col{
+    margin-top: 20px;
+}
+
+section#servicos .row{
+    margin-top: 40px;
+}
+
+section#servicos .row:first-child {
+    margin-top: 10px;
+}
+section#servicos .col h4{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+section#servicos .col p{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+section#servicos .col a{
+    color: #666;
+    font-size: 14px;
+}
+
+section#servicos .col i{
+    color: black;
+}
+
+/* EQUIPE */
+
+#equipe {
+    width: 100%;
+    margin-top: 100px;
+    background-color: #b4d3ee52;
+}
+
+#container-equipe {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.area-texto {
+    width: 50%;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.area-texto h1{
+    font-size: 34px;
+}
+
+.area-texto p{
+    font-size: 16px;
+    text-align: justify;
+    padding-top: 20px;
+    width: 90%;
+}
+
+.area-img {
+    width: 50%;
+}
+
+.area-img img{
+    width: 80%;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width:1000px){
+    .area-img{
+        display: none;
+    }
+
+    .area-texto {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+}
+
+
+/*FORMULARIO DE CONTATO*/
+
+#contato{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.form {
+    display: block;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.form h1 {
+    /* color: linear-gradient(90deg, rgba(64,111,209,1) 0%, rgba(0,129,160,1) 100%, rgba(58,32,179,1) 100%, rgba(0,212,255,1) 100%); */
+    color: rgb(64,111,209);
+    font-weight: 600;
+    padding: 10px;
+}
+
+.form .row {
+    display: block;
+    padding: 10px;
+}
+
+.form .flx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .flx .input{
+    flex: 1;
+}
+
+.form .flx .input:first-child{
+    margin-right: 20px;
+}
+
+.form .input{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 1em;
+    color: #333;
+}
+
+.form .input:focus{
+    border-bottom: 1px solid #2196f3;
+    outline: none;
+}
+
+.form .textarea:focus {
+    border: none;
+    outline: 1px solid #2196f3;
+}
+
+.form .textarea {
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+@media (max-width: 520px){
+    .form{
+        display: block;
+        width: 100%;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 450px){
+    .form .flx{
+        display: block;
+    }
+
+    .form .flx .input:first-child{
+        margin-bottom: 20px;
+    }
+
+    .form .input,
+    .form .textarea,
+    .form .btn {
+        font-size: 0.8em;
+    }
+}
+
+
+
+
+/* RODAPE */
+
+#container-rodape {
+    background: #6c757d;
+}
+
+footer {
+    margin-top: 50px;
+    
+}
+
+footer h5{
+    font-weight: bolder;
+}
+
+.link-rodape a{
+    display: block;
+    padding-bottom: 13px;
+    color: white;
+}
